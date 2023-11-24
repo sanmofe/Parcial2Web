@@ -1,3 +1,4 @@
+import { AlbumEntity } from '../../album/album.entity/album.entity';
 import { Entity, PrimaryGeneratedColumn, Column, ManyToMany } from 'typeorm';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -15,8 +16,8 @@ export class PerformerEntity {
     @Column()
     descripcion: string;
 
-    @ManyToMany(() => PerformerEntity, performer => performer.albums)
-    albums: PerformerEntity[];
+    @ManyToMany(() => AlbumEntity, album => album.performers)
+    albums: AlbumEntity[];
 
     constructor(nombre: string, imagen: string, descripcion: string) {
         this.id = uuidv4();

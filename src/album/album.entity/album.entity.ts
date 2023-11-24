@@ -1,5 +1,5 @@
-import { PerformerEntity } from 'src/performer/performer.entity/performer.entity';
-import { TrackEntity } from 'src/track/track.entity/track.entity';
+import { PerformerEntity } from '../../performer/performer.entity/performer.entity';
+import { TrackEntity } from '../../track/track.entity/track.entity';
 import { Entity, PrimaryGeneratedColumn, Column, OneToMany, ManyToMany } from 'typeorm';
 import { v4 as uuidv4 } from 'uuid';
 

@@ -1,6 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToOne } from 'typeorm';
 import { v4 as uuidv4 } from 'uuid';
-import { AlbumEntity } from 'src/album/album.entity/album.entity';
+import { AlbumEntity } from '../../album/album.entity/album.entity'; 
 
 
 @Entity()
